@@ -1,0 +1,32 @@
+# Julia関連
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+*.jl.*.mem
+
+# システム関連
+.DS_Store
+.env
+.vscode/
+.idea/
+*.swp
+*~
+
+# ビルド関連
+/docs/build/
+/docs/site/
+
+# Julia環境
+Manifest.toml
+/test/coverage/
+coverage/
+*.lcov
+
+# キャッシュ
+.juliahistory 
+
+# for pablic
+docs/archive/
+docs/simulation_modeling_introduction.md
+docs/simulation_overview.md
