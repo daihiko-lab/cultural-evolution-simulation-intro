@@ -128,15 +128,21 @@ Juliaのインストールには2つの方法があります。juliaupを使用�
 
 1.  **juliaupを使用する方法（推奨）** juliaupは、Juliaのバージョン管理ツールです。複数のJuliaバージョンを簡単に切り替えることができます。
 
+    juliaupのインストール
     ``` bash
-    # juliaupのインストール
     brew install juliaup
-
-    # Juliaのインストール（最新版）
-    juliaup add latest
-
-    # バージョンの確認
-    julia --version
+    ```
+    Juliaup が扱っているバージョンを確認
+    ```bash
+    juliaup list
+    ```
+    最新版をインストール (1.11.5, 2025/05/10現在)
+    ```bash
+    julia add 1.11.5
+    ```
+    インストールされたか確認する (ヴァージョン確認する)
+    ```bash
+    Julia --version
     ```
 
     juliaupの便利なコマンド：
@@ -147,7 +153,7 @@ Juliaのインストールには2つの方法があります。juliaupを使用�
     juliaup update        # juliaup自体を更新
     ```
 
-2.  **直接インストールする方法** Homebrewを使用して直接インストールする方法です。
+3.  **直接インストールする方法** Homebrewを使用して直接インストールする方法です。
 
     ``` bash
     brew install julia
